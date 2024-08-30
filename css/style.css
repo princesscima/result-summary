@@ -182,7 +182,46 @@ section .bottom h3{
     color: var(--neutral-white);
     font-size: .8rem;    
 }
-
+@media(min-width: 767px){
+    section{
+        width: 100%;
+    }
+}
 @media(min-width: 1024px){
     
+    body{
+        background: var(--neutral-white);        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    section{
+        display: flex;
+        background: whitesmoke;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px 0px rgba(51, 153, 184, 0.3);
+        padding: 0;
+        height: auto;
+        width: 500px;
+                
+    }
+    section .top{
+        height: auto;
+        border-radius: 20px;
+        max-width: 250px;
+    }
+    section .bottom{
+        background: whitesmoke;
+        border-radius: 0px 20px 20px 0px;
+    }
+    .score p{
+        font-size: .8rem;
+    }
+    .score span{
+        font-size: .8rem;
+    }
+    .memory-container,.reaction-container,.verbal-container,.visual-container{
+        gap: 3rem;
+    }
 }
